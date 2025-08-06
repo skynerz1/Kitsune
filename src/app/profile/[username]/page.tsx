@@ -94,31 +94,32 @@ function ProfilePage() {
               <p className="text-sm text-gray-500">Import:</p>
               <AnilistImport />
             </div>
-            <Tabs defaultValue="watching" className="w-full">
-              <TabsList className="grid w-full grid-cols-1 sm:grid-cols-5">
-                <TabsTrigger value="watching">Watching</TabsTrigger>
-                <TabsTrigger value="plan-to-watch">Plan To Watch</TabsTrigger>
-                <TabsTrigger value="on-hold">On Hold</TabsTrigger>
-                <TabsTrigger value="completed">Completed</TabsTrigger>
-                <TabsTrigger value="dropped">Dropped</TabsTrigger>
-              </TabsList>
+<Tabs defaultValue="watching" className="w-full">
+  <TabsList className="grid w-full grid-cols-1 sm:grid-cols-5">
+    <TabsTrigger value="watching">أشاهد حاليًا</TabsTrigger>
+    <TabsTrigger value="plan-to-watch">مخطط للمشاهدة</TabsTrigger>
+    <TabsTrigger value="on-hold">متوقف مؤقتًا</TabsTrigger>
+    <TabsTrigger value="completed">اكتملت</TabsTrigger>
+    <TabsTrigger value="dropped">تم الإلغاء</TabsTrigger>
+  </TabsList>
 
-              <TabsContent value="watching" className="mt-4">
-                <AnimeLists status="watching" />
-              </TabsContent>
-              <TabsContent value="plan-to-watch" className="mt-4">
-                <AnimeLists status="plan to watch" />
-              </TabsContent>
-              <TabsContent value="on-hold" className="mt-4">
-                <AnimeLists status="on hold" />
-              </TabsContent>
-              <TabsContent value="completed" className="mt-4">
-                <AnimeLists status="completed" />
-              </TabsContent>
-              <TabsContent value="dropped" className="mt-4">
-                <AnimeLists status="dropped" />
-              </TabsContent>
-            </Tabs>
+  <TabsContent value="watching" className="mt-4">
+    <AnimeLists status="watching" />
+  </TabsContent>
+  <TabsContent value="plan-to-watch" className="mt-4">
+    <AnimeLists status="plan to watch" />
+  </TabsContent>
+  <TabsContent value="on-hold" className="mt-4">
+    <AnimeLists status="on hold" />
+  </TabsContent>
+  <TabsContent value="completed" className="mt-4">
+    <AnimeLists status="completed" />
+  </TabsContent>
+  <TabsContent value="dropped" className="mt-4">
+    <AnimeLists status="dropped" />
+  </TabsContent>
+</Tabs>
+
           </div>
           <div className="my-20">
             <AnimeHeatmap />
