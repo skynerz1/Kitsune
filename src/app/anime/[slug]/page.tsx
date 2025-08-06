@@ -34,30 +34,31 @@ import { useGetAnimeBanner } from "@/query/get-banner-anime";
 const SelectOptions: ISelectOptions[] = [
   {
     value: "plan to watch",
-    label: "Plan to Watch",
+    label: "مخطط للمشاهدة",
     icon: BookmarkCheck,
   },
   {
     value: "watching",
-    label: "Watching",
+    label: "أشاهد حاليًا",
     icon: TvMinimalPlay,
   },
   {
     value: "completed",
-    label: "Completed",
+    label: "اكتملت",
     icon: CheckCheck,
   },
   {
     value: "on hold",
-    label: "On Hold",
+    label: "معلقة مؤقتًا",
     icon: Hand,
   },
   {
     value: "dropped",
-    label: "Dropped",
+    label: "تم الإلغاء",
     icon: Ban,
   },
 ];
+
 
 const Page = () => {
   const { slug } = useParams();
@@ -154,21 +155,21 @@ const Page = () => {
               value="overview"
               className="md:text-2xl text-lg font-semibold"
             >
-              Overview
+              نظره عامة
             </TabsTrigger>
 
             <TabsTrigger
               value="episodes"
               className="md:text-2xl text-lg font-semibold"
             >
-              Episodes
+              ألحلقات
             </TabsTrigger>
             {anime.anime.info.charactersVoiceActors.length > 0 && (
               <TabsTrigger
                 value="characters"
                 className="md:text-2xl text-lg font-semibold"
               >
-                Characters
+                ألشخصيات
               </TabsTrigger>
             )}
             {anime.seasons.length > 0 && (
@@ -176,7 +177,7 @@ const Page = () => {
                 value="relations"
                 className="md:text-2xl text-lg font-semibold"
               >
-                Relations
+                ذات صلة
               </TabsTrigger>
             )}
           </TabsList>
@@ -186,32 +187,32 @@ const Page = () => {
             className="w-full grid md:grid-cols-5 grid-cols-1 gap-x-20 gap-y-5 mt-10"
           >
             <div className="col-span-1 flex flex-col gap-5 w-full">
-              <h3 className="text-xl font-semibold">Details</h3>
+              <h3 className="text-xl font-semibold">تفاصيل</h3>
               <div className="grid grid-cols-2 w-full md:text-base text-xs gap-y-2 gap-x-20 md:gap-x-0">
-                <h3>Aired</h3>
+                <h3>تاريخ العرض</h3>
                 <span>{anime.anime.moreInfo.aired}</span>
 
-                <h3>Rating</h3>
+                <h3>ألتقييمات</h3>
                 <span>{anime.anime.info.stats.rating}</span>
 
-                <h3>Genres</h3>
+                <h3>الانواع</h3>
                 <span>{anime.anime.moreInfo.genres.join(", ")}</span>
 
-                <h3>Type</h3>
+                <h3>النوع</h3>
                 <span>{anime.anime.info.stats.type}</span>
 
-                <h3>Status</h3>
+                <h3>الحالة</h3>
                 <span>{anime.anime.moreInfo.status}</span>
 
-                <h3>Season</h3>
+                <h3>الموسم</h3>
                 <span className="capitalize">{}</span>
 
-                <h3>Studios</h3>
+                <h3>العمل الفني</h3>
                 <span>{anime.anime.moreInfo.studios}</span>
               </div>
             </div>
             <div className="col-span-4 flex flex-col gap-5">
-              <h3 className="text-xl font-semibold">Description</h3>
+              <h3 className="text-xl font-semibold">الوصف</h3>
               <p className="md:text-base text-xs leading-6">
                 {anime.anime.info.description}
               </p>
@@ -222,7 +223,7 @@ const Page = () => {
             value="relations"
             className="w-full flex flex-col gap-5 "
           >
-            <h3 className="text-xl font-semibold">Relations</h3>
+            <h3 className="text-xl font-semibold">ذات صله</h3>
             <div className="grid lg:grid-cols-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 w-full gap-5 content-center">
               {anime.seasons.map((relation, idx) => {
                 return (
@@ -249,7 +250,7 @@ const Page = () => {
               value="characters"
               className="w-full flex flex-col gap-5 "
             >
-              <h3 className="text-xl font-semibold">Anime Characters</h3>
+              <h3 className="text-xl font-semibold">ئخصيات ألانمي</h3>
               <div className="grid lg:grid-cols-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 w-full gap-5 content-center">
                 {anime.anime.info.charactersVoiceActors.map(
                   (character, idx) => {
