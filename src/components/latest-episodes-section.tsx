@@ -16,7 +16,7 @@ const LatestEpisodesAnime = (props: Props) => {
   if (props.loading) return <LoadingSkeleton />;
   return (
     <Container className="flex flex-col gap-5 py-10 items-center lg:items-start lg:mt-[-10.125rem] z-20 ">
-      <h5 className="text-2xl font-bold">Recent Releases</h5>
+      <h5 className="text-2xl font-bold">الإصدارات الحديثة</h5>
       <div className="grid lg:grid-cols-5 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-7 w-full gap-5 content-center">
         {props.latestEpisodes?.map((anime, idx) => (
           <BlurFade key={idx} delay={idx * 0.05} inView>
