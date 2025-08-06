@@ -131,7 +131,7 @@ const HeroCarouselItem = ({ anime }: { anime: SpotlightAnime }) => {
                 href={`${ROUTES.ANIME_DETAILS}/${anime.id}`}
                 className="h-10 text-md bg-[#e9376b] text-white hover:bg-[#e9376b]"
               >
-                Learn More
+                أبدا
               </ButtonLink>
               {/* <ButtonLink href={`${ROUTES.WATCH}?anime=${anime.id}&episode=${}`} className="h-10 text-md" variant={"secondary"}>
                 Watch
