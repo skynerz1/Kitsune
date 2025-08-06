@@ -89,7 +89,7 @@ const AnimeEpisodes = ({ animeId }: Props) => {
   return (
     <>
       <div className="flex w-full items-center justify-between">
-        <h3 className="text-xl font-semibold">Episodes</h3>
+        <h3 className="text-xl font-semibold">الحلقات</h3>
         <div className="flex items-center gap-2">
           {ranges.length > 0 && (
             <Select onValueChange={handleRangeChange} value={selectedRange}>
