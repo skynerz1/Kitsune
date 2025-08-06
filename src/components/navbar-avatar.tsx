@@ -37,7 +37,7 @@ function NavbarAvatar({ auth }: Props) {
               onClick={() => setOpen(false)}
             >
               <User size="20" />
-              <p>Profile</p>
+              <p>الملف الشخصي</p>
             </Link>
           </div>
 
@@ -49,7 +49,7 @@ function NavbarAvatar({ auth }: Props) {
             }}
           >
             <LogOut size="20" />
-            <p>Logout</p>
+            <p>تسجيل خروج</p>
           </div>
         </PopoverContent>
       </Popover>
