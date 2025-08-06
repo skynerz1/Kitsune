@@ -1,7 +1,7 @@
 export const types = [
-  { value: "all", label: "All" },
-  { value: "movie", label: "Movie" },
-  { value: "tv", label: "Tv" },
+  { value: "all", label: "الكل" },
+  { value: "movie", label: "افلام" },
+  { value: "tv", label: "مسلسلات" },
   { value: "ova", label: "Ova" },
   { value: "special", label: "Special" },
   { value: "music", label: "Music" },
