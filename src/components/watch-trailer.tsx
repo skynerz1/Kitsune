@@ -18,7 +18,7 @@ const WatchTrailer = ({ videoHref }: { videoHref: string }) => {
         LeftIcon={CirclePlay}
         onClick={() => setIsVideoOpen((prev) => !prev)}
       >
-        Watch Trailer
+        شاهد الاعلان
       </Button>
       <AnimatePresence>
         {isVideoOpen && (
