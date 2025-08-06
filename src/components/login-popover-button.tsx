@@ -141,7 +141,7 @@ function LoginPopoverButton() {
           variant="outline"
           className="bg-white text-md text-black hover:bg-gray-200 hover:text-black transition-all duration-300"
         >
-          Login
+          تسجيل دخول
         </Button>
       </PopoverTrigger>
       <PopoverContent
@@ -155,15 +155,15 @@ function LoginPopoverButton() {
         >
           <TabsList>
             <TabsTrigger onClick={clearForm} value="login">
-              Login
+              تسجيل دخول
             </TabsTrigger>
             <TabsTrigger onClick={clearForm} value="signup">
-              Signup
+              أنشاء حساب
             </TabsTrigger>
           </TabsList>
           <TabsContent value="login" className="flex flex-col gap-2">
             <div className="mt-2">
-              <p className="text-gray-300 text-xs">Email or Username:</p>
+              <p className="text-gray-300 text-xs">البريد الالكتروني او الرقم:</p>
               <Input
                 required
                 onChange={(e) =>
@@ -175,7 +175,7 @@ function LoginPopoverButton() {
               />
             </div>
             <div>
-              <p className="text-gray-300 text-xs">Password:</p>
+              <p className="text-gray-300 text-xs">كلمه السر:</p>
               <Input
                 required
                 type="password"
@@ -193,7 +193,7 @@ function LoginPopoverButton() {
               type="submit"
               onClick={loginWithEmail}
             >
-              Login
+              تسجيل دخول
             </Button>
             <hr className="text-white text-xs text-center" />
             <Button
@@ -203,12 +203,12 @@ function LoginPopoverButton() {
               onClick={loginWithDiscord}
             >
               <DiscordIcon className="mr-2" />
-              Login with Discord
+              تسجيل داخله بواسطه دسكورد
             </Button>
           </TabsContent>
           <TabsContent value="signup" className="flex flex-col gap-2">
             <div>
-              <p className="text-gray-300 text-xs">Username:</p>
+              <p className="text-gray-300 text-xs">اسم المستخدم:</p>
               <Input
                 required
                 onChange={(e) =>
@@ -219,18 +219,18 @@ function LoginPopoverButton() {
               />
             </div>
             <div>
-              <p className="text-gray-300 text-xs">Email:</p>
+              <p className="text-gray-300 text-xs">الايميل:</p>
               <Input
                 required
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
                 type="email"
-                placeholder="Enter your email"
+                placeholder="ادخل الايميل حقك"
               />
             </div>
             <div>
-              <p className="text-gray-300 text-xs">Password:</p>
+              <p className="text-gray-300 text-xs">كلمه السر:</p>
               <Input
                 required
                 onChange={(e) =>
@@ -241,7 +241,7 @@ function LoginPopoverButton() {
               />
             </div>
             <div>
-              <p className="text-gray-300 text-xs">Confirm Password:</p>
+              <p className="text-gray-300 text-xs">تأكيد كلمه السر:</p>
               <Input
                 required
                 onChange={(e) =>
@@ -258,7 +258,7 @@ function LoginPopoverButton() {
               type="submit"
               onClick={signupWithEmail}
             >
-              Signup
+              انشاء حساب
             </Button>
             <hr className="text-white text-xs text-center" />
             <Button
@@ -268,7 +268,7 @@ function LoginPopoverButton() {
               onClick={loginWithDiscord}
             >
               <DiscordIcon className="mr-2" />
-              Signup with Discord
+              انشاء حساب بواسطه دسكورد
             </Button>
           </TabsContent>
         </Tabs>
