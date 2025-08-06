@@ -33,27 +33,27 @@ type Props = {
 const SelectOptions: ISelectOptions[] = [
   {
     value: "plan to watch",
-    label: "Plan to Watch",
+    label: "مخطط للمشاهدة",
     icon: BookmarkCheck,
   },
   {
     value: "watching",
-    label: "Watching",
+    label: "أشاهد حاليًا",
     icon: TvMinimalPlay,
   },
   {
     value: "completed",
-    label: "Completed",
+    label: "اكتملت",
     icon: CheckCheck,
   },
   {
     value: "on hold",
-    label: "On Hold",
+    label: "متوقفة مؤقتًا",
     icon: Hand,
   },
   {
     value: "dropped",
-    label: "Dropped",
+    label: "تم الإلغاء",
     icon: Ban,
   },
 ];
