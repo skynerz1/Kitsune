@@ -205,7 +205,7 @@ const VideoPlayerSection = () => {
             onCheckedChange={(e) => onHandleAutoSkipChange(e)}
             id="auto-skip"
           />
-          <p>Auto Skip</p>
+          <p>تخطي تلقائي</p>
         </div>
       </div>
     </div>
