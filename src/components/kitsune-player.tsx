@@ -32,7 +32,7 @@ interface ArtPlayerProps extends HTMLAttributes<HTMLDivElement> {
   animeInfo: { title: string; image: string; id: string }; // Basic anime info for poster etc.
   subOrDub: "sub" | "dub"; // Use literal type for clarity
   episodes?: IEpisodes; // Optional: If needed for playlist features later
-  getInstance?: (art: DFkzPlayer) => void; // Callback to get the instance
+  getInstance?: (art: ArtPlayer) => void; // Callback to get the instance
   autoSkip?: boolean;
   serversData: IEpisodeServers;
 }
