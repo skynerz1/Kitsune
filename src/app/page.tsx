@@ -34,21 +34,21 @@ export default function Home() {
         loading={isLoading}
         featuredAnime={[
           {
-            title: "Most Favorite Anime",
+            title: "الأنمي المفضل لدى الأغلبية",
             anime: data?.mostFavoriteAnimes as IAnime[],
           },
           {
-            title: "Most Popular Anime",
+            title: "الأنمي الأكثر شهرة",
             anime: data?.mostPopularAnimes as IAnime[],
           },
           {
-            title: "Latest Completed Anime",
+            title: "أحدث الأنميات المكتملة",
             anime: data?.latestCompletedAnimes as LatestCompletedAnime[],
           },
         ]}
       />
       <AnimeSections
-        title={"Trending Anime"}
+        title={"الأنميات الرائجة"}
         trendingAnime={data?.trendingAnimes as IAnime[]}
         loading={isLoading}
       />
@@ -56,7 +56,7 @@ export default function Home() {
       <AnimeSchedule />
 
       <AnimeSections
-        title={"Upcoming Animes"}
+        title={"الأنميات القادمة"}
         trendingAnime={data?.topUpcomingAnimes as IAnime[]}
         loading={isLoading}
       />
