@@ -5,7 +5,7 @@ services:
       - "3000:3000"
     environment:
       - NEXT_PUBLIC_POCKETBASE_URL=http://localhost:8090
-      - NEXT_PUBLIC_PROXY_URL=https://proxy-m3u8-production.up.railway.app
+      - NEXT_PUBLIC_PROXY_URL=https://proxy-m3u8-production.up.railway.app/
 
   proxy:
     image: dovakiin0/proxy-m3u8:latest
