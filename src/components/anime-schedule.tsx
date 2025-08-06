@@ -44,7 +44,7 @@ function AnimeSchedule() {
 
   return (
     <Container className="flex flex-col gap-5 py-10 items-center lg:items-start">
-      <h5 className="text-2xl font-bold">Schedule</h5>
+      <h5 className="text-2xl font-bold">الجدول</h5>
       <Tabs
         orientation="vertical"
         defaultValue={defaultTab}
