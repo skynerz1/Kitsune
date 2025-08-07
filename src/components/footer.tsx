@@ -15,7 +15,7 @@ const Footer = () => {
         </a>
       </div>
       <p className="text-sm text-gray-300">
-        Kitsune does not store any files on the server, we only link to the
+        DFkz does not store any files on the server, we only link to the
         media which is hosted on 3rd party services.
       </p>
       <p className="text-sm text-gray-300">&copy; DFkz</p>
